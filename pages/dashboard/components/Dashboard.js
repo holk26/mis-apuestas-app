@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 
 import { Col, Row } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
-import ModalAgregarApuesta from './ModalAgregarApuesta';
+//import ModalAgregarApuesta from './ModalAgregarApuesta';
 
 const dashboard = () =>{
 
