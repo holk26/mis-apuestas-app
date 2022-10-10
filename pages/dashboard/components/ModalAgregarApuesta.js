@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import Nav from 'react-bootstrap/Nav';
+//import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 
-const ModalAgregarApuesta = () =>{
+const ModalAgregarApuesta = () => {
 
 
    // setModalShow(modalShow1);
