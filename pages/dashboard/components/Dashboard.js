@@ -15,11 +15,11 @@ const dashboard = () =>{
     return(
         <>
         <Row>
-    <Col><h1>Tablero</h1></Col>
-    <Col>
-        <Button variant="primary" onClick={handleShow}>
-           Agregar apuesta
-        </Button></Col>
+            <Col><h1>Tablero</h1></Col>
+            <Col style={{direction: "rtl"}} >
+                <Button className="center-block" variant="primary" onClick={handleShow}>
+                  Agregar apuesta
+                </Button></Col>
 </Row>
         <Table striped bordered hover>
       <thead>

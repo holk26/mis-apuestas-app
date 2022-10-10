@@ -13,7 +13,7 @@ const Layout = () => {
     return(
         <>
         
-        <Navbar bg="dark"  expand="lg" variant="dark">
+        <Navbar bg="dark"  expand="md" variant="dark">
         <Container>
         <Navbar.Brand onClick={() => router.push('/')}>
             <Image

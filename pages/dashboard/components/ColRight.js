@@ -3,6 +3,7 @@ import Dashboard from './Dashboard';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
+import Estadisticas from './Estadisticas'
 const ColRight = () => {
  
 
@@ -17,10 +18,10 @@ const ColRight = () => {
                     <Dashboard />
                 </Tab>
                 <Tab eventKey="statistics" title="Estadisticas">
-                    <div>Statistics</div>
+                    <Estadisticas />
                 </Tab>
-                <Tab eventKey="contact" title="Contact" disabled>
-                    <Dashboard />
+                <Tab eventKey="contact" title="Contact">
+                    <div>contact</div>
                 </Tab>  
                 </Tabs>  
         

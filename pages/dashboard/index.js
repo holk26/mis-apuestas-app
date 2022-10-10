@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Head from 'next/head'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -17,13 +16,13 @@ const Dashboard = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Row>
-        <Col sm={2}>
+        <Col md={3}>
         <br></br>
            <ColLeft />
                 
 
         </Col>
-        <Col sm={10}><br></br>
+        <Col md={9}><br></br>
         
         <ColRight />
         

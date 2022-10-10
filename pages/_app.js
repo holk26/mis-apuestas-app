@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return(
     <>
     <Layout />
-    <Container>
+    <Container fluid="xl">
         <Component {...pageProps} />
     </Container>
        
