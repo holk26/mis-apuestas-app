@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 
 import { Col, Row } from 'react-bootstrap';
@@ -7,17 +6,17 @@ import ModalAgregarApuesta from './ModalAgregarApuesta';
 
 const dashboard = () =>{
 
-  const [show, setShow] = useState(false);
+  /*const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => setShow(true);*/
 
     return(
         <>
         <Row>
             <Col><h1>Tablero</h1></Col>
             <Col style={{direction: "rtl"}} >
-                <Button className="center-block" variant="primary" onClick={handleShow}>
+                <Button className="center-block" variant="primary">
                   Agregar apuesta
                 </Button></Col>
 </Row>

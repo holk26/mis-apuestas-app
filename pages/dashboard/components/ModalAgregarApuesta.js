@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
+//import React, { useState } from 'react';
+//import Modal from 'react-bootstrap/Modal';
 //import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
+//import Button from 'react-bootstrap/Button';
 
 const ModalAgregarApuesta = () => {
 
@@ -9,9 +9,9 @@ const ModalAgregarApuesta = () => {
    // setModalShow(modalShow1);
  
 
-    return(
+    return(<div>hola</div>
 
-        <Modal show={modalShow} onHide={handleClose}>
+       /* <Modal show={modalShow} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
@@ -24,7 +24,7 @@ const ModalAgregarApuesta = () => {
             Save Changes
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal>*/
     );
 }
 
