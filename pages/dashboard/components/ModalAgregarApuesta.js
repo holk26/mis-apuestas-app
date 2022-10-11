@@ -1,17 +1,16 @@
-//import React, { useState } from 'react';
-//import Modal from 'react-bootstrap/Modal';
-//import Nav from 'react-bootstrap/Nav';
-//import Button from 'react-bootstrap/Button';
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
-const ModalAgregarApuesta = () => {
+const ModalAgregarApuesta = ({show3}) => {
+  const [show, setShow] = useState(show3);
+ console.log(show3);
+  const handleClose = () => setShow(false);
 
 
-   // setModalShow(modalShow1);
- 
-
-    return(<div>hola</div>
-
-       /* <Modal show={modalShow} onHide={handleClose}>
+  return (
+    <>
+      <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
@@ -24,8 +23,9 @@ const ModalAgregarApuesta = () => {
             Save Changes
           </Button>
         </Modal.Footer>
-      </Modal>*/
-    );
+      </Modal>
+    </>
+  );
 }
 
 export default ModalAgregarApuesta;

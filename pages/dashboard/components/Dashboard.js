@@ -1,22 +1,24 @@
 import Button from 'react-bootstrap/Button';
-
+import { useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
-//import ModalAgregarApuesta from './ModalAgregarApuesta';
+import ModalAgregarApuesta from './ModalAgregarApuesta';
 
 const dashboard = () =>{
 
-  /*const [show, setShow] = useState(false);
-
+  const [show, setShow] = useState(false);
+/*
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);*/
+  const handleShow = () => setShow(true);
 
+  console.log("modal "+show);
     return(
         <>
         <Row>
             <Col><h1>Tablero</h1></Col>
             <Col style={{direction: "rtl"}} >
-                <Button className="center-block" variant="outline-dark">
+                <Button onClick={handleShow} className="center-block" variant="outline-dark">
                   Agregar apuesta!
                 </Button></Col>
 </Row>
@@ -54,7 +56,7 @@ const dashboard = () =>{
         </tr>
       </tbody>
     </Table>
-
+    <ModalAgregarApuesta hola={show}/>
     
         </>
     );
