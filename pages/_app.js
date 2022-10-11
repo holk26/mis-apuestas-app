@@ -10,6 +10,8 @@ function MyApp({ Component, pageProps }) {
     <Container fluid="xl">
         <Component {...pageProps} />
     </Container>
+    
+
        
     </>
     

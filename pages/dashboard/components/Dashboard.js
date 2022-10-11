@@ -16,7 +16,7 @@ const dashboard = () =>{
         <Row>
             <Col><h1>Tablero</h1></Col>
             <Col style={{direction: "rtl"}} >
-                <Button className="center-block" variant="primary">
+                <Button className="center-block" variant="outline-primary">
                   Agregar apuesta!
                 </Button></Col>
 </Row>
