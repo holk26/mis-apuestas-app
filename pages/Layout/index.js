@@ -32,7 +32,7 @@ const Layout = () => {
           <Nav className="me-auto">
             <Nav.Link onClick={() => router.push('/')}>Inicio</Nav.Link>
             <Nav.Link onClick={() => router.push('/servicios')}>Servicios</Nav.Link>
-            <Nav.Link onClick={() => router.push('/dashboard')}>Planes</Nav.Link>
+            <Nav.Link onClick={() => router.push('/planes')}>Planes</Nav.Link>
             <Nav.Link onClick={() => router.push('/dashboard')}>Contacto</Nav.Link>
           </Nav>
           

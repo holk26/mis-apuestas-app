@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-const ModalAgregarApuesta = ({show3}) => {
-  const [show, setShow] = useState(show3);
- console.log(show3);
+const ModalAgregarApuesta = ({hola}) => {
+  const [show, setShow] = useState(hola);
+ console.log(hola);
   const handleClose = () => setShow(false);
 
 
