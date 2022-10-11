@@ -1,6 +1,8 @@
 const Registro = () => {
     return(
-        <div>Registro</div>
+        <div>
+            REGISTRO
+        </div>
 
     );
 }

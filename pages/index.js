@@ -21,12 +21,18 @@ export default function Home() {
       
       <Container>
       <Row className="justify-content-md-center">
-          <Col>
+          <Col style={{
+            marginTop: "15rem",
+        }}>
                <h2>CONTROL TOTAL</h2>
                <h1>DE TODAS TUS APUESTAS</h1>
-               <Button variant="primary" onClick={() => router.push('/dashboard')}>DESCUBRELO</Button>
+               <Button variant="outline-dark" onClick={() => router.push('/dashboard')}>DESCUBRELO</Button>
           </Col>
-          <Col>
+          <Col style={{
+            marginTop: "3rem",
+
+
+        }}>
           <Image
               alt=""
               src={logo}
