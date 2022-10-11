@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Image from 'next/image'
-import logo from '../public/LOGO APUESTAS 1.svg'
+import logo from '../public/logo black claro.svg'
 
 
 
@@ -24,8 +24,8 @@ export default function Home() {
           <Col style={{
             marginTop: "15rem",
         }}>
-               <h2>CONTROL TOTAL</h2>
-               <h1>DE TODAS TUS APUESTAS</h1>
+               <h2 className='font-weight-light'>CONTROL TOTAL</h2>
+               <h1 className='font-weight-bold'>DE TODAS TUS APUESTAS</h1>
                <Button variant="outline-dark" onClick={() => router.push('/dashboard')}>DESCUBRELO</Button>
           </Col>
           <Col style={{

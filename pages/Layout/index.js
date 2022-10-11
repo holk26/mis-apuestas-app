@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useRouter } from 'next/router'
 import Image from 'next/image'
-import logo from '../../public/logo black.svg'
+import logo from '../../public/PRINCIPAL.svg'
 
 const Layout = () => {
 
