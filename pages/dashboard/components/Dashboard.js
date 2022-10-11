@@ -17,7 +17,7 @@ const dashboard = () =>{
             <Col><h1>Tablero</h1></Col>
             <Col style={{direction: "rtl"}} >
                 <Button className="center-block" variant="primary">
-                  Agregar apuesta
+                  Agregar apuesta!
                 </Button></Col>
 </Row>
         <Table striped bordered hover>
