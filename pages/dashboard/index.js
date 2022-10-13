@@ -16,13 +16,13 @@ const Dashboard = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Row>
-        <Col md={2}>
+        <Col md={2} className="overflow-hidden">
         <br></br>
            <ColLeft />
                 
 
         </Col>
-        <Col md={10}><br></br>
+        <Col md={10} className="overflow-auto"><br></br>
         
         <ColRight />
         
