@@ -16,13 +16,13 @@ const Dashboard = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Row>
-        <Col md={3}>
+        <Col md={2}>
         <br></br>
            <ColLeft />
                 
 
         </Col>
-        <Col md={9}><br></br>
+        <Col md={10}><br></br>
         
         <ColRight />
         

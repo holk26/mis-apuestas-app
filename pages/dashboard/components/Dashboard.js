@@ -3,16 +3,23 @@ import { useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 import ModalAgregarApuesta from './ModalAgregarApuesta';
-
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Form from 'react-bootstrap/Form';
 const dashboard = () =>{
 
+  
   const [show, setShow] = useState(false);
 /*
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);*/
   const handleShow = () => setShow(true);
 
-  console.log("modal "+show);
+  const handleChange = event => {
+    console.log(event.target.value);
+
+  };
+
     return(
         <>
         <Row>
@@ -22,40 +29,118 @@ const dashboard = () =>{
                   Agregar apuesta!
                 </Button></Col>
 </Row>
-        <Table striped bordered hover>
+        <Table bordered hover responsive>
       <thead>
         <tr>
-          <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
-          <th>Username</th>
+          <th>FECHA</th>
+          <th>LINEA</th>
+          <th>MOMIO</th>
+          <th>APUESTA</th>
+          <th>GANACIA</th>
+          <th>UTILIDAD</th>
+          <th>TOTALES</th>
+          <th>RESULTADO</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
+          <td>12/10/2022</td>
+          <td>SANTOS LAGUNA</td>
+          <td>120</td>
+          <td>100000</td>
+          <td>22000</td>
+          <td>12000</td>
+          <td>30000</td>
+          <td>
+              <Form.Select size="sm">
+                <option value="4">PENDIENTE</option>
+                <option value="1">GANADA</option>
+                <option value="2">PERDIDAD</option>
+                <option value="3">NULO</option>
+              </Form.Select>
+           </td>
+
         </tr>
         <tr>
-          <td>2</td>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-          <td>@fat</td>
+          <td>12/10/2022</td>
+          <td>SANTOS LAGUNA</td>
+          <td>120</td>
+          <td>100000</td>
+          <td>22000</td>
+          <td>12000</td>
+          <td>30000 onChange</td>
+          <td>
+              <Form.Select onChange={handleChange} size="sm">
+                <option>PENDIENTE</option>
+                <option value="1">GANADA</option>
+                <option value="2">PERDIDA</option>
+                <option value="3">NULO</option>
+              </Form.Select>
+           </td>
+
         </tr>
         <tr>
-          <td>3</td>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-          <td>@fat</td>
+          <td>12/10/2022</td>
+          <td>SANTOS LAGUNA</td>
+          <td>120</td>
+          <td>100000</td>
+          <td>22000</td>
+          <td>12000</td>
+          <td>30000</td>
+          <td>
+              <Form.Select size="sm">
+                <option>PENDIENTE</option>
+                <option value="1">GANADA</option>
+                <option value="2">PERDIDA</option>
+                <option value="3">NULO</option>
+              </Form.Select>
+           </td>
+
         </tr>
+        <tr>
+          <td>12/10/2022</td>
+          <td>SANTOS LAGUNA</td>
+          <td>120</td>
+          <td>100000</td>
+          <td>22000</td>
+          <td>12000</td>
+          <td>30000</td>
+          <td>
+              <Form.Select size="sm">
+                <option>PENDIENTE</option>
+                <option value="1">GANADA</option>
+                <option value="2">PERDIDA</option>
+                <option value="3">NULO</option>
+              </Form.Select>
+           </td>
+
+        </tr>
+
+        <tr>
+          <td>12/10/2022</td>
+          <td>SANTOS LAGUNA</td>
+          <td>120</td>
+          <td>100000</td>
+          <td>22000</td>
+          <td>12000</td>
+          <td>30000</td>
+          <td>
+              <Form.Select size="sm">
+                <option>PENDIENTE</option>
+                <option value="1">GANADA</option>
+                <option value="2">PERDIDA</option>
+                <option value="3">NULO</option>
+              </Form.Select>
+           </td>
+
+        </tr>
+
+
       </tbody>
     </Table>
+    <div>
+        
+      </div>
     <ModalAgregarApuesta hola={show}/>
     
         </>
