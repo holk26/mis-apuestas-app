@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 import ModalAddBet from './ModalAddBet';
 import Form from 'react-bootstrap/Form';
-const TableBet = () =>{
+const TableBet = ({dataTable, dataBets}) =>{
 
   const [modalShow, setModalShow] = useState(false);
 
@@ -12,36 +12,22 @@ const TableBet = () =>{
     console.log(value);
   };
 
-  const dataBets = [
-    {keyBet: "1", date : "13/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-    {keyBet: "2", date : "13/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-    {keyBet: "3", date : "13/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-    {keyBet: "4", date : "13/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-    {keyBet: "5", date : "13/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-    {keyBet: "6", date : "13/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-    {keyBet: "7", date : "13/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-    {keyBet: "8", date : "13/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-    {keyBet: "9", date : "13/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-    {keyBet: "10", date : "13/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-    {keyBet: "11", date : "13/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-    {keyBet: "12", date : "13/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-  ];
+
 
 
   return(
         <>
         <Row>
-            <Col><h1>Dashboard</h1></Col>
+            <Col md={9}><h1>Dashboard {dataTable}</h1></Col>
             <Col style={{direction: "rtl"}} >
                 <Button variant="outline-dark" className="center-block" onClick={() => setModalShow(true)}>
                     Agregar apuesta
                 </Button>
-           </Col>
-
-           <ModalAddBet show={modalShow} onHide={() => setModalShow(false)} />
+           </Col>      
                 
       </Row>
-      <Table bordered hover responsive>
+      <ModalAddBet show={modalShow} onHide={() => setModalShow(false)} />
+      <Table bordered hover responsive style={{marginTop: '1rem'}}>
 
             <thead>
               <tr>
@@ -49,7 +35,7 @@ const TableBet = () =>{
                   <th>LINEA</th>
                   <th>MOMIO</th>
                   <th>APUESTA</th>
-                  <th>GANACIA</th>
+                  <th>GANANCIA</th>
                   <th>UTILIDAD</th>
                   <th>TOTALES</th>
                   <th>RESULTADO</th>
@@ -59,7 +45,7 @@ const TableBet = () =>{
             {dataBets.map(({ ...value }) => (
               
                   <tr key={value.keyBet}>
-                    {}
+                    
                     <td>{value.date}</td>
                     <td>{value.line}</td>
                     <td>{value.momio}</td>
