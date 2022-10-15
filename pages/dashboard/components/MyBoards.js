@@ -11,7 +11,7 @@ const MyBoards = () => {
     const [modalShow, setModalShow] = useState(false);
 
     const dataTables = [
-        {keyTables: "1", date: "13/10/2022", title: "Steward", subTitle: "soccer", textBox: "import data deport"},
+        {keyTables: "1", date: "13/10/2022", title: "Boxing", subTitle: "Descripcion", textBox: "Notas referentes al tablero"},
         {keyTables: "1", date: "13/10/2022", title: "Steward", subTitle: "soccer", textBox: "import data deport"},
         {keyTables: "1", date: "13/10/2022", title: "Steward", subTitle: "soccer", textBox: "import data deport"},
         {keyTables: "1", date: "13/10/2022", title: "Steward", subTitle: "soccer", textBox: "import data deport"},

@@ -13,18 +13,18 @@ const ItemBoards = () => {
     const { idTable } = router.query;
 
     const dataBets = [
-        {keyBet: "1", date : "13/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-        {keyBet: "2", date : "14/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 255000, resultBet: 1},
-        {keyBet: "3", date : "15/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 235000, resultBet: 1},
-        {keyBet: "4", date : "16/10/2022", line: "Steward", momio: 312312, valueBet: 130000, winBet: 212000, resultBet: 1},
-        {keyBet: "5", date : "17/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-        {keyBet: "6", date : "18/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 225000, resultBet: 1},
-        {keyBet: "7", date : "19/10/2022", line: "Steward", momio: 312312, valueBet: 105000, winBet: 215000, resultBet: 1},
-        {keyBet: "8", date : "20/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 265000, resultBet: 1},
-        {keyBet: "9", date : "21/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 275000, resultBet: 1},
-        {keyBet: "10", date : "22/10/2022", line: "Steward", momio: 312312, valueBet: 130000, winBet: 10000, resultBet: 1},
-        {keyBet: "11", date : "23/10/2022", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
-        {keyBet: "12", date : "24/10/2022", line: "Venus", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
+        {keyBet: "1", date : "2022-01-26", line: "BATMAN VS SUPERMAN", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
+        {keyBet: "2", date : "2022-02-21", line: "TOM VS JERRY", momio: 312312, valueBet: 100000, winBet: 255000, resultBet: 1},
+        {keyBet: "3", date : "2022-03-26", line: "Steward", momio: 312312, valueBet: 100000, winBet: 235000, resultBet: 1},
+        {keyBet: "4", date : "2022-04-26", line: "Steward", momio: 312312, valueBet: 130000, winBet: 212000, resultBet: 1},
+        {keyBet: "5", date : "2022-05-26", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
+        {keyBet: "6", date : "2022-06-26", line: "Steward", momio: 312312, valueBet: 100000, winBet: 225000, resultBet: 1},
+        {keyBet: "7", date : "2022-07-26", line: "Steward", momio: 312312, valueBet: 105000, winBet: 215000, resultBet: 1},
+        {keyBet: "8", date : "2022-08-26", line: "Steward", momio: 312312, valueBet: 100000, winBet: 265000, resultBet: 1},
+        {keyBet: "9", date : "2022-09-26", line: "Steward", momio: 312312, valueBet: 100000, winBet: 275000, resultBet: 1},
+        {keyBet: "10", date : "2022-10-26", line: "Steward", momio: 312312, valueBet: 130000, winBet: 10000, resultBet: 1},
+        {keyBet: "11", date : "2022-11-26", line: "Steward", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
+        {keyBet: "12", date : "2022-12-26", line: "Venus", momio: 312312, valueBet: 100000, winBet: 215000, resultBet: 1},
       ];
 
     return(
@@ -37,7 +37,7 @@ const ItemBoards = () => {
       <Row style={{marginTop: '2rem'}}>
         <Col md={2} className="overflow-hidden">
 
-           <ColLeft idStatis={idTable}/>
+           <ColLeft idStatis={"DATOS DE LA TABLA"}/>
                 
         </Col>
         <Col md={10} className="overflow-auto">

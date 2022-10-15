@@ -18,7 +18,7 @@ const Dashboard = () => {
       <Row>
         <Col md={2} className="overflow-hidden">
         <br></br>
-           <ColLeft idStatis={"01"}/>
+           <ColLeft idStatis={"MI DINERO"}/>
                 
         </Col>
         <Col md={10} className="overflow-auto">

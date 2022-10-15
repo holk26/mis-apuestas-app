@@ -5,7 +5,7 @@ const ColLeft = ({idStatis}) => {
         <>
          <ListGroup variant="flush">
                 <ListGroup.Item><div className="ms-2 me-auto">
-          <div className="d-flex justify-content-between align-items-start"><h5>INFORMACION {idStatis}</h5></div>
+          <div className="d-flex justify-content-between align-items-start"><h5> {idStatis}</h5></div>
         </div></ListGroup.Item>
                 <ListGroup.Item><div className="ms-2 me-auto">
           <div className="fw-bold">SALDO</div>

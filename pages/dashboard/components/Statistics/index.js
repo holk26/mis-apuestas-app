@@ -37,13 +37,18 @@ const options = {
 };
 
 const labels = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
-'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', '13/10/2022'];
+'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
-const loser = [];
+let loser = [];
 dataBets.map((item, index) => {
+  let b = new Date(item.date);
+    //loser[index] = labels[b.getMonth() - 1];
+    loser[index] = `${b.getDate()}-${b.getMonth()}-${b.getFullYear()}`;
+
     
-    loser[index] = item.date;
 })
+
+//labels = loser;
 
 const utility = [];
 dataBets.map((item, index) => {
@@ -53,9 +58,8 @@ dataBets.map((item, index) => {
 
 
 console.log(loser);
-console.log(labels);
 const data = {
-    labels,
+  labels,
   datasets: [
     {
       label: 'Winner',
